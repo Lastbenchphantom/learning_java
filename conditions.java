@@ -8,12 +8,12 @@ public class conditions{
 
         age = sc.nextInt();
 
-        if(age>18){
-            System.out.println("adult");
+        if(age%2==0){
+            System.out.println("even");
         }
 
         else{
-            System.out.println("not adult");
+            System.out.println("odd");
         }
     }
 }
