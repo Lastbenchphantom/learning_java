@@ -10,16 +10,17 @@ public class switchs{
 
         n = sc.nextInt();
 
-        if(n==1){
-            System.out.println("switch 1 on");
-        }else if(n==2){
-            System.out.println("switch 2 on");
-        }else if(n==3){
-            System.out.println("switch 3 on");
-        }
+        switch(n){
+            case 1: System.out.println("switch 1 on");
+            break;
 
-        else {
-            System.out.println("invalid input");
+            case 2: System.out.println("switch 2 on");
+            break;
+
+            case 3: System.out.println("switch 3 on");
+            break;
+
+            default: System.out.println("invalid input");
         }
     }
 }
