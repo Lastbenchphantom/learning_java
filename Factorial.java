@@ -5,7 +5,7 @@ public class Factorial{
     public static void myFactorial(int n){
         int factorial = 1;
 
-        if(n<=d0){
+        if(n<=0){
             System.out.println("Invalid input\n");
             return;
         }
