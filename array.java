@@ -41,5 +41,7 @@ public class array{
             }
         }
 
+        System.out.println("Target not found");
+
     }
 }
