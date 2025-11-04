@@ -4,18 +4,29 @@ public class array{
     public static void main(String args[]){
         Scanner sc = new Scanner(System.in);
 
-        int[] marks = new int[3];
+        int r, c;
 
+        System.out.println("enter row size");
+        r = sc.nextInt();
 
+        System.out.println("enter column size");
+        c = sc.nextInt();
 
-        for(int i=0; i<3; i++){
-            marks[i] = sc.nextInt();
+        int numbers[][] = new int[r][c];
+
+        for(int i=0; i<r; i++){
+            for(int j=0; j<c; j++){
+                System.out.println("enter number of " + (i+1) + "," + (j+1));
+                numbers[i][j] = sc.nextInt();
+            }
         }
 
-        for(int i=0; i<3; i++){
-            System.out.println(marks[i]);
+        for(int i=0; i<r; i++){
+            for(int j=0; j<c; j++){
+                System.out.print(numbers[i][j] + " ");
+            }
+            System.out.print("\n");
         }
 
-    
     }
 }
